@@ -15,10 +15,10 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/meals', async (req, res) => {
-  const meals = await fs.readFile('./data/available-meals.json', 'utf8');
-  res.json(JSON.parse(meals));
-});
+// app.get('/meals', async (req, res) => {
+//   const meals = await fs.readFile('./data/available-meals.json', 'utf8');
+//   res.json(JSON.parse(meals));
+// });
 
 app.post('/orders', async (req, res) => {
   const orderData = req.body.order;

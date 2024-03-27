@@ -4,6 +4,7 @@ import { currencyFormatter } from '../util/formatting.js';
 import Button from './UI/Button.jsx';
 import CartContext from '../store/CartContext.jsx';
 
+
 export default function MealItem({ meal }) {
   const cartCtx = useContext(CartContext);
 
@@ -14,7 +15,7 @@ export default function MealItem({ meal }) {
   return (
     <li className="meal-item">
       <article>
-        <img src={`../../backend/public/${meal.image}`} alt={meal.name} />
+          <img src={`/${meal.image}`} alt={meal.name} />
         <div>
           <h3>{meal.name}</h3>
           <p className="meal-item-price">
