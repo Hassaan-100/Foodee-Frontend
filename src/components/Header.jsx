@@ -28,9 +28,7 @@ export default function Header() {
       <nav>
         <Button  textOnly onClick={handleShowCart}>
           <Fab variant='extended' style={{backgroundColor : "#ffc404"}}><ShoppingCartOutlinedIcon style={{fontSize : 35}}/>  cart({totalCartItems})</Fab> 
-          
         </Button>
-        
       </nav>
     </header>
   );
